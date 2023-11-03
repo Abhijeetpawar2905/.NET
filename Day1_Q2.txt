@@ -1,0 +1,30 @@
+//Q2.Accept a float value and print square of that number
+//Solve above code using Parse(), ToSingle() and TryPrase() method.
+//Also observe exception if you do not enter valid data
+
+
+using System;
+namespace basic1
+{
+    class demo
+    {
+        public static void Main(String[] args)
+        {
+            int f;
+
+            Console.WriteLine("enter no 1:");
+            String n1=Console.ReadLine();
+
+            bool b= int.TryParse(n1, out f);
+
+            //int a =Convert.ToInt32(n1); 
+
+            //float c =Convert.ToSingle(n1);
+
+            float result = f * f;
+            
+            Console.WriteLine(result);
+
+        }
+    }
+}

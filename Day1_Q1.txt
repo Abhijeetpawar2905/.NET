@@ -1,0 +1,30 @@
+//1)Create class calculator with two method Add and product. Create object and call method.
+
+using System;
+namespace basic1
+{
+    class demo
+    {
+        public static void Main(String[] args)
+        {
+            int f;
+            int h;
+            
+            Console.WriteLine("Enter first no :");
+            string n1=Console.ReadLine();
+            bool a =int.TryParse(n1, out f);
+
+
+            Console.WriteLine("Enter second no:");
+            String n2 =Console.ReadLine();
+            bool b=int.TryParse(n2, out h);
+
+            int result = f + h;
+           
+
+            
+            Console.WriteLine("result :"+result);
+            
+        }
+    }
+}

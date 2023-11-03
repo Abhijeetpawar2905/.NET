@@ -1,0 +1,37 @@
+//Q2.Accept a float value and print square of that number
+//Solve above code using Parse(), ToSingle() and TryPrase() method.
+//Also observe exception if you do not enter valid data
+
+using System;
+namespace basic1
+{
+    class program
+    {
+        public int square(int x)
+        {
+            return x * x;
+        }
+        public int cube (int x)
+        {
+            return x* x * x ;
+        }
+        public int roundof(float x)
+        {
+            int a = (int)x;
+            return a;
+
+        }
+    }
+    class demo
+    {
+        public static void Main(String[] args)
+        {
+            program p = new program();
+
+            Console.WriteLine(p.square(10));
+            Console.WriteLine(p.cube(5));
+            Console.WriteLine(p.roundof(2.5f));
+           
+        }
+    }
+}
