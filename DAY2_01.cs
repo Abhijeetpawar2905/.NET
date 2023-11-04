@@ -1,4 +1,4 @@
-1)Take two numbers from user and do sum of it
+//1)Take two numbers from user and do sum of it
 using System
 namespace Problem1
 {
